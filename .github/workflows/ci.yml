@@ -21,7 +21,7 @@ jobs:
       - name: Run tests
         run: |
           python -m src.train
-          pytest tests/
+          pytest test/
 
   train-and-quantize:
     needs: test-suite
